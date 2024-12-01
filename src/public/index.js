@@ -1,22 +1,18 @@
 const socketClient = io()
-
 const productos = document.getElementById(productos)
 
-function mostrarProductos(products){
+socketClient.on('arrayProducts', (products) =>{
     productos.innerHTML = ''
 
-    products.forEach(prod => {
-        const div = document.createElement('div')
-        div.innerHTML = `
-            <p>${prod.name}</p>
-            <p>${prod.price}</p>
-            <p>${prod.categoria}</p>
+    products.forEach((product) =>{
+        const listItem = document.createElement('div')
+        listItem.innerHTML = ` 
+        <h3 class="card-title">${product.name}</h3>
+        <p class="card-text">Descripción: ${product.description}</p>
+        <p class="card-text">Stock: ${product.stock}</p>
+        <p class="card-text">Precio: $${product.price}</p>
         `
-
-        productos.appendChild(div)
-    });
-}
-
-socketClient.on('actualizarProductos', (products) =>{
-    showProducts(products)
+        productos.appendChild(listItem)
+    })
 })
+

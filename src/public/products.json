@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1732131626936,
+      "name": "Uva",
+      "description": "Uva verde fria",
+      "stock": 40,
+      "price": 1200
+    },
+    {
+      "id": 1732131656733,
+      "name": "Limon",
+      "description": "Amarilla y agria",
+      "stock": 34,
+      "price": 2300
+    },
+    {
+      "id": 1732131700247,
+      "name": "Fideos",
+      "description": "Fideos hechos a base de harina de trigo",
+      "stock": 30,
+      "price": 3000
+    },
+    {
+      "id": 1733082457899,
+      "name": "Azucar",
+      "description": "Consumible para endulzar alimentos o/y bebidas",
+      "stock": 30,
+      "price": 4000
+    },
+    {
+      "id": 1733082562436,
+      "name": "Lechuga",
+      "description": "Verdura verde fresca",
+      "stock": 10,
+      "price": 3400
+    },
+    {
+      "id": 1733084944372,
+      "name": "Tomate",
+      "description": "Fruta para hacer ensalada o tuco",
+      "stock": 60,
+      "price": 4000
+    }
+  ]
